@@ -1,0 +1,40 @@
+ .m-footer {
+    /* height: 10rem; */
+    font-size: 2rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+.m-footer__content {
+    padding: 0;
+    max-width: 100%;
+}
+
+.m-footer-copyright {
+    margin-bottom: 0;
+}
+
+/* .m-footer-social {
+    margin-bottom: 0.25rem;
+} */
+
+.social-links{
+    display: flex;
+    justify-content: center;
+}
+
+.social-link{
+    margin: 0.5rem;
+}
+
+.flex-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 1.25rem;
+    align-items: center;
+}
+
+.flex-item{
+    margin: 10px;
+}
