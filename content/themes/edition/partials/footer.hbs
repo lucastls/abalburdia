@@ -1,0 +1,50 @@
+<link rel="stylesheet" type="text/css" href="{{asset "css/site/footer.css"}}" />
+
+<footer class="site-footer container">
+    <div class="footer-inner">
+        <div class="footer-left">
+            <div class="flex-item">
+                <p>Apoiado por:</p>
+                <div class="flex-container">
+                    <a href="https://www.kcl.ac.uk" target="_blank">
+                        <img class="flex-item" src="{{asset "images/KCL.jpg"}}" alt="King's College London" width="100px" height="76px">
+                    </a>
+                    <a href="https://wellcome.ac.uk" target="_blank">
+                        <img class="flex-item" src="{{asset "images/wellcome-logo-black.png"}}" alt="welcome trust" height="76px">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <nav class="footer-nav">
+<!--            {{navigation type="secondary"}}-->
+            <div class="copyright">
+                {{@site.title}} © {{date format="YYYY"}}
+            </div>
+        </nav>
+
+        <div class="footer-right">
+            <div class="social">
+                {{#if @site.facebook}}
+                    <a class="social-item social-item-facebook"
+                        href="{{facebook_url @site.facebook}}" target="_blank"
+                        rel="noopener noreferrer" aria-label="Facebook">
+                        {{> icons/facebook}}
+                    </a>
+                {{/if}}
+
+                {{#if @site.twitter}}
+                    <a class="social-item social-item-twitter"
+                        href="{{twitter_url @site.twitter}}" target="_blank"
+                        rel="noopener noreferrer" aria-label="Twitter">
+                        {{> icons/twitter}}
+                    </a>
+                {{/if}}
+                <a class="social-link social-item-instagram" href="https://www.instagram.com/abalburdia/" aria-label="Instagram" target="_blank"
+                   rel="noopener">
+                    <span class="icon-instagram"> </span>
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
